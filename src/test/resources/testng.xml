@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Changed http to https OR removed the SYSTEM declaration -->
+<!DOCTYPE suite SYSTEM "">
+<suite name="SauceDemo Test Suite" parallel="false" verbose="2">
+
+    <!-- Define listeners for screenshot capture -->
+    <listeners>
+        <listener class-name="com.saucedemo.listeners.ScreenshotListener"/>
+    </listeners>
+
+    <!-- Smoke Tests -->
+    <test name="Smoke Tests">
+        <classes>
+            <class name="com.saucedemo.tests.TC001_LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Functional Tests -->
+    <test name="Functional Tests">
+        <classes>
+            <class name="com.saucedemo.tests.TC002_InventoryTest"/>
+            <class name="com.saucedemo.tests.TC003_AddToCartTest"/>
+            <class name="com.saucedemo.tests.TC004_CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>

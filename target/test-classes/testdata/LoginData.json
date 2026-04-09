@@ -1,0 +1,17 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "testType": "validLogin"
+  },
+  {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "testType": "lockedOutUser"
+  },
+  {
+    "username": "invalid_user",
+    "password": "wrong_password",
+    "testType": "invalidCredentials"
+  }
+]
